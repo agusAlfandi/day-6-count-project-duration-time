@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>creating From, Navbar & Layout</title>
+        <link rel="stylesheet" type="text/css" href="../Assets/style/style.css" >
+        <script src="../JavaScript/script.js"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="left-side">
+                <img src="../Assets/img/logo.png">
+                <div>
+                    <a href="../index2.html">
+                        Home
+                    </a>
+                    <a href="../index.html">
+                        My Project
+                    </a>
+                </div>
+            </div>
+            <div class="right-side">
+                <a href="../Page/ContactMe.html">
+                    Contact Me
+                </a>
+            </div>
+        </nav>
+        <div class="page">
+            <form class="contact-me">
+                <h1>GET IN TOUCH</h1>
+                <div>
+                    <label for="input-name">Full Name</label>
+                    <input id="input-name" type="name">
+                </div>
+                <div>
+                    <label for="input-email">Email</label>
+                    <input id="input-email" type="email">
+                </div>
+                <div>
+                    <label for="input-phone">Phone Number</label>
+                    <input id="input-phone" type="phone">
+                </div>
+                <div>
+                    <label for="input-subject">Subject</label>
+                    <select id="input-subject">
+                        <option hidden></option>
+                        <option>Let's Talk</option>
+                        <option>Let's Collaboration</option>
+                        <option>I am Hiring</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="input-message">Your Message</label>
+                    <textarea id="input-message" placeholder="Write Your Message"></textarea>
+                </div>
+                <button type="button" id="submit" onclick="submitForm()">Submit</button>
+            </form>
+            
+        </div>
+    </body>
+</html>

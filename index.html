@@ -1,0 +1,126 @@
+<html>
+
+<head>
+    <title>My Project</title>
+    <link rel="stylesheet" type="text/css" href="./Assets/style/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="left-side">
+            <img src="./Assets/img/logo.png" />
+            <div>
+                <a href="./index2.html"> Home </a>
+                <a href="./index.html"> My Project </a>
+            </div>
+        </div>
+        <div class="right-side">
+            <a href="./Page/ContactMe.html"> Contact Me </a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="form-container">
+            <form>
+                <h4>ADD MY PROJECT</h4>
+                <div class="project-input">
+                    <label for="project">Project Name</label>
+                    <input id="project">
+                </div>
+                <div class="date-input">
+                    <div class="start-date">
+                        <label for="start-input">Start Date</label>
+                        <input id="start-input" type="date">
+                    </div>
+                    <div class="end-date">
+                        <label for="end-input">End Date</label>
+                        <input id="end-input" type="date">
+                    </div>
+                </div>
+                <div class="desc-input">
+                    <label for="desc">Description</label>
+                    <textarea id="description" cols="30" rows="5"></textarea>
+                </div>
+                <div class="tech-input">
+                    <label for="check-box-detail">Technologies</label>
+                    <div class="left-checkbox">
+                        <div>
+                            <input type="checkbox" id="node" value="node">
+                            <label for="node">Node JS</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="react" value="react">
+                            <label for="react">React JS</label>
+                        </div>
+                    </div>
+                    <div class="right-checkbox">
+                        <div>
+                            <input type="checkbox" id="next" value="next">
+                            <label for="next">Next JS</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="type" value="type">
+                            <label for="type">Type Script</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="img">
+                    <label>Upload Image</label>
+                    <label class="input-choose" for="upload">
+                        <p>Choose</p>
+                        <img src="./Assets/img/upload.png">
+                    </label>
+                    <input type="file" id="upload" hidden>
+                </div>
+                <div class="submit">
+                    <button type="button" onclick="MyProject()">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container-1">
+        <h4 class="title">MY PROJECT</h4>
+        <div id="contents" class="project-list">
+
+            <div class="project-list-item">
+                <a href="./Page/ProjectDetail.html">
+                    <div class="card-img">
+                        <img src='./Assets/img/gue.jpg'>
+                    </div>
+                    <div class="card-title">
+                        <h3>DumpWays Web App</h3>
+                    </div>
+                    <div class="card-drs">
+                        <p>Durasi 3 bulan</p>
+                    
+                    </div>
+                    <div class="card-desc">
+                        <p>
+                            REPUBLIKA.CO.ID, JAKARTA -- Ketimpangan sumber daya manusia (SDM) di
+                            sektor digital masih menjadi isu yang belum terpecahkan
+                            
+                          </p>
+                    </div>
+                    <div class="card-icon">
+                        <img src="Assets/img/javascript.png">
+                        <img src="Assets/img/node.png">
+                        <img src="Assets/img/react.png">
+                        <img src="Assets/img/type.png">
+                    </div>
+                </a>
+                <div class="card-btn">
+                    <div class="edit">
+                        <button>edit</button>
+                    </div>
+                    <div class="card-delete">
+                        <button>delete</button>
+                    </div>
+                </div>
+            
+            </div>
+
+        </div>
+    </div>
+    <script src="./JavaScript/MyProject.js"></script>
+</body>
+
+</html>
