@@ -135,7 +135,7 @@ function getDistanceTime(time, time1) {
   let distance = currentTime - projectPostAt;
   // console.log(distance);
   // conver to daylet
-  let dayDistance = Math.floor(distance / (1000 * 60 * 60));
+  let dayDistance = Math.floor(distance / (1000 * 60 * 60 * 24));
 
   if (dayDistance > 0) {
     return `${dayDistance} day ago`;
@@ -148,17 +148,18 @@ function getDistanceTime(time, time1) {
     } else {
       // Convert to Minute
       let minuteDistance = Math.floor(distance / (1000 * 60));
+      if (minuteDistance > 0) {
+        return `${minuteDistance} minute ago`;
+      } else {
+        // Convert to Second
+        let secondDistance = Math.floor(distance / 1000);
 
-      return `${minuteDistance} minute ago`;
+        return `${secondDistance} second ago`;
+      }
     }
-    //  else {
-    //   // Convert to Second
-    //   let secondDistance = Math.floor(distance / 1000);
-
-    //   return `${secondDistance} second ago`;
-    // }
   }
 }
+
 setInterval(() => {
   renderProject();
 }, 1000);
