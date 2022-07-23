@@ -43,7 +43,7 @@ function MyProject() {
 function renderProject() {
   let projectWrapper = document.getElementById("contents");
 
-  projectWrapper.innerHTML = "";
+  // projectWrapper.innerHTML = "";
 
   for (let i = 0; i < Projects.length; i++) {
     projectWrapper.innerHTML += `

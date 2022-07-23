@@ -277,11 +277,14 @@ h4 {
 }
 
 /* == project list == */
+.container-1 {
+    background-color: #f7f7f7;
+    height: 100vh;
+}
 .container-1 .title {
-    margin-top: 50px;
+    padding-top: 20px;
     font-size: 25px;
     font-weight: 900;
-
 }
 h4 {
     text-align: center;
