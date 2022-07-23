@@ -65,12 +65,26 @@ h1 {
 nav {
     display: flex;
 }
+nav ul {
+    list-style-type: none;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding-left: 25
+}
+nav ul li a.active {
+    color: crimson;
+    font-weight: 700;
+}
 nav div {
     flex: 1;
     display: flex;
     height: 7vh;
     align-items: center;
-
 }
 nav .left-side {
     background-color: #f4f3f3;
@@ -80,11 +94,6 @@ nav .right-side {
     background-color: #f4f3f3;
     justify-content: end;
     padding-right: 50px;
-}
-nav .left-side a {
-    text-decoration: none;
-    color: black;
-    padding-left: 25;
 }
 nav .left-side a:hover {
     text-decoration: none;
@@ -270,12 +279,13 @@ h4 {
     flex-wrap: wrap;
 }
 .project-list-item {
+    display: flex;
     margin: 20px;
     width: 300px;
-    height: 520px;
     box-shadow: 0px 5px 20px rgb(216 216 216);
     border: 0.2px solid rgb(216, 216, 216);
     border-radius: 5px;
+    flex-direction: column;
 }
 a {
     color: black;

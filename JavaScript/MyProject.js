@@ -18,7 +18,7 @@ function MyProject() {
     dateEnd == "" ||
     image == ""
   ) {
-    return alert("opss column data cannot be empty");
+    return alert("All input fields must be not empty");
   }
 
   image = URL.createObjectURL(image.files[0]);
@@ -33,7 +33,7 @@ function MyProject() {
     postAt: new Date(),
   };
 
-  // console.log(project);
+  console.log(Project);
   Projects.push(Project);
   renderProject();
 }
@@ -46,10 +46,11 @@ function renderProject() {
   projectWrapper.innerHTML = "";
 
   for (let i = 0; i < Projects.length; i++) {
-    projectWrapper.innerHTML += `<div id="${i}" class="project-list-item">
-    <a href="./Page/ProjectDetail.html">
+    projectWrapper.innerHTML += `
+    <div class="project-list-item">
+      <a href="./Page/ProjectDetail.html">
         <div class="card-img">
-            <img src=${Projects[i].image}>
+           <img src=${Projects[i].image}>
         </div>
         <div style="display: flex;">
           <div class="card-title" style="flex: 60%;">
@@ -78,17 +79,17 @@ function renderProject() {
             <img src="Assets/img/react.png">
             <img src="Assets/img/type.png">
         </div>
-    </a>
-    <div class="card-btn">
+      </a>
+      <div class="card-btn">
         <div class="edit">
             <button>edit</button>
         </div>
         <div class="card-delete">
             <button>delete</button>
         </div>
-    </div>
+      </div>
 
-</div>`;
+    </div>`;
   }
 }
 function getFullTime(time) {

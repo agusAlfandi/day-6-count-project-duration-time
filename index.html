@@ -6,12 +6,19 @@
 </head>
 
 <body>
+    <script type="text/javascript" src="./JavaScript/Active.js"></script>
     <nav>
         <div class="left-side">
             <img src="./Assets/img/logo.png" />
             <div>
-                <a href="./index2.html"> Home </a>
-                <a href="./index.html"> My Project </a>
+                <ul>
+                    <li>
+                        <a href="./index2.html"> Home </a>
+                    </li>
+                    <li>
+                        <a class="active" href="./index.html"> My Project </a>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="right-side">
@@ -29,11 +36,11 @@
                 <div class="date-input">
                     <div class="start-date">
                         <label for="start-input">Start Date</label>
-                        <input id="start-input" type="date">
+                        <input id="start-input" type="datetime-local">
                     </div>
                     <div class="end-date">
                         <label for="end-input">End Date</label>
-                        <input id="end-input" type="date">
+                        <input id="end-input" type="datetime-local">
                     </div>
                 </div>
                 <div class="desc-input">
