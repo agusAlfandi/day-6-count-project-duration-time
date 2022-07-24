@@ -296,13 +296,13 @@ h4 {
     flex-wrap: wrap;
 }
 .project-list-item {
-    display: flex;
     margin: 20px;
     width: 300px;
+    height: 430px;
     box-shadow: 0px 5px 20px rgb(216 216 216);
     border: 0.2px solid rgb(216, 216, 216);
-    border-radius: 5px;
-    flex-direction: column;
+    cursor: pointer;
+    border-radius: 8px;
 }
 a {
     color: black;
@@ -316,12 +316,13 @@ a {
 .project-list-item .card-img img {
     width: 280px;
     border-radius: 8px;
+    height: 198px;
 }
 .project-list-item .card-title h3 {
     padding-left: 10px;
-    margin-top: 90px;
     font-size: 14px;
     width: 280px;
+    margin-top: -8;
 }
 .project-list-item .card-drs p {
     color: #585858a6;
@@ -329,11 +330,15 @@ a {
     margin-top: -10px;
 }
 .project-list-item .card-desc {
-    margin-top: 10px;
+    margin-top: -10px;
     font-size: 12px;
     padding-left: 10px;
-    text-align: justify;
     padding-right: 10px;
+    text-align: justify;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 70px;
 }
 .project-list-item .card-icon img {
     width: 30px;
