@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <html>
-
 <head>
     <title>My Project</title>
     <link rel="stylesheet" type="text/css" href="./Assets/style/style.css">
@@ -26,7 +26,7 @@
     </nav>
     <div class="container">
         <div class="form-container">
-            <form>
+            <form onsubmit="MyProject(event)">
                 <h4>ADD MY PROJECT</h4>
                 <div class="project-input">
                     <label for="project">Project Name</label>
@@ -60,7 +60,7 @@
                     </div>
                     <div class="right-checkbox">
                         <div>
-                            <input type="checkbox" id="next" value="./Assets/img/javascript.png">
+                            <input type="checkbox" id="next" value="next">
                             <label for="next">Next JS</label>
                         </div>
                         <div>
@@ -78,7 +78,7 @@
                     <input type="file" id="upload" hidden>
                 </div>
                 <div class="submit">
-                    <button type="button" onclick="MyProject()">Submit</button>
+                    <button >Submit</button>
                 </div>
             </form>
         </div>

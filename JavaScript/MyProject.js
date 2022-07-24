@@ -1,7 +1,7 @@
 let Projects = [];
 
-function MyProject() {
-  // event.preventDefault();
+function MyProject(event) {
+  event.preventDefault();
   let title = document.getElementById("project").value;
   let dateStart = document.getElementById("start-input").value;
   let dateEnd = document.getElementById("end-input").value;
