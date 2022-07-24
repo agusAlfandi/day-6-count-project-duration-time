@@ -24,7 +24,8 @@ function MyProject() {
     printIcon += '<img value="react" id="react" src="./Assets/img/react.png">';
   }
   if (next.checked == true) {
-    printIcon += '<img value="next" id="next" src="./Assets/img/next.png">';
+    printIcon +=
+      '<img value="next" id="next" src="./Assets/img/javascript.png">';
   }
   if (type.checked == true) {
     printIcon += '<img value="type" id="type" src="./Assets/img/type.png">';
@@ -64,7 +65,7 @@ function renderProject() {
              <img src=${Projects[i].image}>
           </div>
             <div class="card-title">
-                <h3 style="margin-top: 80px; width: 150px;">
+                <h3>
                 ${Projects[i].title}</h3>
             </div>
           <div class="card-drs">
