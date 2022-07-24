@@ -45,7 +45,7 @@ function MyProject() {
     postAt: new Date(),
   };
 
-  console.log(Project);
+  // console.log(Project);
   Projects.push(Project);
   renderProject();
 }
