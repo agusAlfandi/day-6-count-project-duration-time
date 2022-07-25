@@ -93,7 +93,7 @@ function renderProject() {
   
       </div>`;
   }
-  alert("Your Project is upload");
+  alert("Your project has been added successfully");
 }
 
 function getFullTime(endDate, startDate) {
