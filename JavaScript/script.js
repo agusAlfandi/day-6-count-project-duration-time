@@ -5,11 +5,11 @@ function submitForm() {
   let subject = document.getElementById("input-subject").value;
   let message = document.getElementById("input-message").value;
 
-  console.log(name);
-  console.log(email);
-  console.log(phone);
-  console.log(subject);
-  console.log(message);
+  // console.log(name);
+  // console.log(email);
+  // console.log(phone);
+  // console.log(subject);
+  // console.log(message);
 
   if (name == "") {
     return alert("Opps nama tidak boleh kosong");

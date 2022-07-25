@@ -19,16 +19,20 @@ function MyProject(event) {
 
   if (node.checked == true) {
     printIcon += '<img value="node" id="node" src="./Assets/img/node.png">';
-  } else if (react.checked == true) {
+  }
+  if (react.checked == true) {
     printIcon += '<img value="react" id="react" src="./Assets/img/react.png">';
-  } else if (next.checked == true) {
+  }
+  if (next.checked == true) {
     printIcon +=
       '<img value="next" id="next" src="./Assets/img/javascript.png">';
-  } else if (type.checked == true) {
-    printIcon += '<img value="type" id="type" src="./Assets/img/type.png">';
-  } else {
-    return alert("Please select one of the checkboxes");
   }
+  if (type.checked == true) {
+    printIcon += '<img value="type" id="type" src="./Assets/img/type.png">';
+  }
+  // {
+  //   return alert("Please select one of the checkboxes");
+  // }
 
   image = URL.createObjectURL(image.files[0]);
   dateStart = new Date(dateStart);
@@ -121,7 +125,7 @@ function getFullTime(endDate, startDate) {
         return "durasi " + month + " bulan";
       } else if (startMonth < endMonth) {
         month = endMonth - startMonth;
-        return "durasi 1 tahun " + month + bulan;
+        return "durasi 1 tahun " + month + "bulan";
       }
     } else {
       year = endYear - startYear;
