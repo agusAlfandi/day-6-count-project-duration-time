@@ -269,6 +269,9 @@ h4 {
     box-shadow: 3px 3px 5px rgb(212, 212, 212);
     padding-left: 5px;
 }
+.img .input-choose .upload {
+    border-style: none;
+}
 .submit button {
     padding: 7px 40px;
     background-color: rgb(0, 0, 20);
@@ -337,7 +340,6 @@ a {
     color: #585858a6;
     padding-left: 10px;
     margin-top: -10px;
-    margin-bottom: 0px;
 }
 .project-list-item .card-desc {
     margin-top: -10px;
@@ -353,7 +355,10 @@ a {
 .project-list-item .card-icon img {
     width: 30px;
     padding-left: 10px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
+}
+.project-list-item .card-icon {
+    display: block;
 }
 .project-list-item .card-btn {
     display: flex;

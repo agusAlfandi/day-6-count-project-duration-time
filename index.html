@@ -44,7 +44,7 @@
                 </div>
                 <div class="desc-input">
                     <label for="desc">Description</label>
-                    <textarea id="description" cols="30" rows="5" placeholder="Write Your Description"></textarea>
+                    <textarea id="description" cols="30" rows="5" required placeholder="Write Your Description"></textarea>
                 </div>
                 <div class="tech-input">
                     <label for="check-box-detail">Technologies</label>
@@ -72,13 +72,13 @@
                 <div class="img">
                     <label>Upload Image</label>
                     <label class="input-choose" for="upload">
-                        <p>Choose</p>
+                        <!-- <p>Choose</p> -->
+                        <input class="upload" type="file" id="upload" required>
                         <img src="./Assets/img/upload.png">
                     </label>
-                    <input type="file" id="upload" hidden>
                 </div>
                 <div class="submit">
-                    <button >Submit</button>
+                    <button>Submit</button>
                 </div>
             </form>
         </div>

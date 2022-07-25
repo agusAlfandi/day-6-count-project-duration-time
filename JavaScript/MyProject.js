@@ -19,17 +19,17 @@ function MyProject(event) {
 
   if (node.checked == true) {
     printIcon += '<img value="node" id="node" src="./Assets/img/node.png">';
-  }
-  if (react.checked == true) {
+  } else if (react.checked == true) {
     printIcon += '<img value="react" id="react" src="./Assets/img/react.png">';
-  }
-  if (next.checked == true) {
+  } else if (next.checked == true) {
     printIcon +=
       '<img value="next" id="next" src="./Assets/img/javascript.png">';
-  }
-  if (type.checked == true) {
+  } else if (type.checked == true) {
     printIcon += '<img value="type" id="type" src="./Assets/img/type.png">';
+  } else {
+    return alert("Please select one of the checkboxes");
   }
+
   image = URL.createObjectURL(image.files[0]);
   dateStart = new Date(dateStart);
   dateEnd = new Date(dateEnd);
